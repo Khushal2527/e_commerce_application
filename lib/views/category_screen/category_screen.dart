@@ -16,9 +16,6 @@ class CategoryScreen extends StatelessWidget {
     return bgWidget(
       child: Scaffold(
         appBar: AppBar(
-          leading: BackButton(
-            color: whiteColor,
-          ),
           elevation: 0.0,
           title: categories.text.color(whiteColor).fontFamily(bold).make(),
         ),
