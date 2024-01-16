@@ -19,17 +19,13 @@ class ItemDetails extends StatelessWidget {
   @override
 
   Widget build(BuildContext context) {
-
     var controller = Get.put(ProductController());
-
-     if(controller.inCart(data.id) == true){
+    if(controller.inCart(data.id) == true){
       controller.getCartField(data.id);
     }
-
     if(controller.inCart(data.id) == false){
       controller.resetValues();
     }
-
     return WillPopScope(
       onWillPop: () async {
         if(controller.inCart(data.id) == false ){
