@@ -60,29 +60,22 @@ class CartController extends GetxController{
       "order_on_delivery":false,
       'total_amount': totalAmount,
       'orders':FieldValue.arrayUnion(products),
-      'vendors':FieldValue.arrayUnion(vendors),
 
     });
     placingOrder(false);
   }
 
   Future<String> getNextOrderID() async {
-    // Query for the most recent order
+    
     QuerySnapshot querySnapshot = await firestore.collection(ordersCollection).orderBy('order_code', descending: true).limit(1).get();
-
     if (querySnapshot.docs.isNotEmpty) {
       String lastOrderID = querySnapshot.docs.first['order_code'];
-      // Extract the numeric part of the order ID
       int lastOrderNumber = int.parse(lastOrderID.replaceAll(RegExp(r'\D+'), ''));
-      // Increment the order number
       int nextOrderNumber = lastOrderNumber + 1;
-      // Create the next order ID
       String nextOrderID = '00000$nextOrderNumber';
-
       return nextOrderID;
     }
     else {
-      // If no orders exist, start from Order_1
       return '000001';
     }
   }
@@ -95,11 +88,11 @@ class CartController extends GetxController{
         'color':productSnapshot[i]['color'],
         'img':productSnapshot[i]['img'],
         'qty':productSnapshot[i]['qty'],
-        'vendor_id':productSnapshot[i]['vendor_id'],
+        // 'vendor_id':productSnapshot[i]['vendor_id'],
         'tprice':productSnapshot[i]['tprice'],
         'title':productSnapshot[i]['title'],
       });
-      vendors.add(productSnapshot[i]['vendor_id']);
+      // vendors.add(productSnapshot[i]['vendor_id']);
     }
   }
 
