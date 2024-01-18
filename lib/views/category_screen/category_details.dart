@@ -25,15 +25,16 @@ class _CategoryDetailsState extends State<CategoryDetails> {
   @override
   void initState() {
     super.initState();
+    controller.selectedCategory.value = controller.subCat[0];
     switchCategory(widget.title);
   }
 
-  switchCategory(title){
-    if(controller.subCat.contains(title)){
-      productMethod = FirestoreServices.getSubCategory(title);
+  switchCategory(subcat){
+    if(controller.subCat.contains(subcat)){
+      productMethod = FirestoreServices.getSubCategory(widget.title,subcat);
     }
     else{
-      productMethod = FirestoreServices.getProducts(title);
+      productMethod = FirestoreServices.getProducts(widget.title,subcat);
     }
   }
   
@@ -63,6 +64,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
                   (index) => 
                   "${controller.subCat[index]}".text.size(12).fontFamily(semibold).color(darkFontGrey).makeCentered().box.rounded.white.size(120,60).margin(const EdgeInsets.symmetric(horizontal: 4)).make().onTap(() {
                       switchCategory('${controller.subCat[index]}');
+                      controller.selectedCategory.value = controller.subCat[index];
                       setState(() {});
                     }),
                   ),

@@ -20,6 +20,7 @@ class ProductController extends GetxController {
   var colorIndex = 0.obs;
   var totalPrice = 0.obs;
   var isFav = false.obs;
+  var selectedCategory = "".obs ;
   var cartProductId = [].obs;
 
   getCartproducts() async {

@@ -12,12 +12,12 @@
             "name" : "Men Clothing & Fashion",
             "subCategory" : [
                 "Jackets",
-                "Formal Dresses",
+                "Formal Dress",
                 "Accessories"
             ]
         },
         {
-            "name": "Computer & Accesories",
+            "name": "Computer & Accessories",
             "subCategory" : [
                 "Laptop",
                 "Gaming PC",
@@ -41,10 +41,10 @@
             ]
         },
         {
-            "name" : "Cell Phones and Tabs",
+            "name" : "Cellphone & Tab",
             "subCategory" : [
-                "SmartPhone",
-                "Tablet",
+                "Smartphone",
+                "Tablets",
                 "Accessories"
             ]
         }
