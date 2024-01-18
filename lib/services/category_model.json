@@ -25,13 +25,6 @@
             ]
         },
         {
-            "name": "Automobile",
-            "subCategory" : [
-                "Cars",
-                "Bikes"
-            ]
-        },
-        {
             "name" : "Kids & Toys",
             "subCategory" : [
                 "Shoes & Bags",
@@ -48,27 +41,11 @@
             ]
         },
         {
-            "name" : "Jewellery",
-            "subCategory" : [
-                "Necklace",
-                "Gold",
-                "Earring"
-            ]
-        },
-        {
             "name" : "Cell Phones and Tabs",
             "subCategory" : [
                 "SmartPhone",
                 "Tablet",
                 "Accessories"
-            ]
-        },
-        {
-            "name" : "Furniture",
-            "subCategory" : [
-                "Sofa",
-                "Bed",
-                "Home Textile"
             ]
         }
     ]
