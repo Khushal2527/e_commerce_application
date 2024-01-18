@@ -16,6 +16,7 @@ class CategoryScreen extends StatelessWidget {
     return bgWidget(
       child: Scaffold(
         appBar: AppBar(
+          leading: const  BackButton(color: whiteColor,),
           elevation: 0.0,
           title: categories.text.color(whiteColor).fontFamily(bold).make(),
         ),
@@ -23,7 +24,7 @@ class CategoryScreen extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: GridView.builder(
             shrinkWrap: true,
-            itemCount: 9,
+            itemCount: categoryList.length,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               crossAxisSpacing: 8,

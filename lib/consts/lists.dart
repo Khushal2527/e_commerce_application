@@ -25,11 +25,11 @@ const featuredTitle2 =[
 ];
 
 const categoryList = [
-  womenClothing, menClotingFashion, compAccessories ,automobile , kidtoys , sports , jewellry , cellPhone , furniture 
+  womenClothing, menClotingFashion, compAccessories , kidtoys , sports , cellPhone
 ];
 
 const categoryImages = [
-  imgS1,imgFc1,imgFc2,imgFc3,imgFc4,imgFc5,imgS11,imgFc6,imgFc9
+  imgS1,imgFc1,imgFc2,imgFc4,imgFc5,imgFc6,imgFc9
 ];
 
 const profileButtonsList = [
