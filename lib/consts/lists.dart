@@ -25,7 +25,7 @@ const featuredTitle2 =[
 ];
 
 const categoryList = [
-  womenClothing, menClotingFashion, compAccessories , kidtoys , sports , cellPhone 
+  womenClothing, menClotingFashion, compAccessories ,automobile , kidtoys , sports , jewellry , cellPhone , furniture 
 ];
 
 const categoryImages = [
