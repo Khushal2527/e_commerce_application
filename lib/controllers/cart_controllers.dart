@@ -88,11 +88,11 @@ class CartController extends GetxController{
         'color':productSnapshot[i]['color'],
         'img':productSnapshot[i]['img'],
         'qty':productSnapshot[i]['qty'],
-        // 'vendor_id':productSnapshot[i]['vendor_id'],
+        'vendor_id':productSnapshot[i]['vendor_id'],
         'tprice':productSnapshot[i]['tprice'],
         'title':productSnapshot[i]['title'],
       });
-      // vendors.add(productSnapshot[i]['vendor_id']);
+      vendors.add(productSnapshot[i]['vendor_id']);
     }
   }
 

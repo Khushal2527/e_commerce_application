@@ -21,6 +21,9 @@ class HomeController extends GetxController{
       if(value.docs.isNotEmpty){
         return value.docs.single['name'];
       }
+      else{
+        return "Guest User";
+      }
     });
 
     username = n;
