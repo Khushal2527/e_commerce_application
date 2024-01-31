@@ -1,4 +1,4 @@
-// Customer Application   fir
+// Customer Application
 
 import "package:e_commerce_application/firebase_options.dart";
 import "package:e_commerce_application/views/splash_screen/splash_screen.dart";
