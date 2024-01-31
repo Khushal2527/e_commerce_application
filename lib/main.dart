@@ -1,3 +1,5 @@
+// Customer Application
+
 import "package:e_commerce_application/firebase_options.dart";
 import "package:e_commerce_application/views/splash_screen/splash_screen.dart";
 import "package:firebase_core/firebase_core.dart";
